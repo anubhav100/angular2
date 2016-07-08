@@ -1,0 +1,14 @@
+<h1 style="text-align:center;color:red!important;">DATA OF STUDENTS</h1>
+<table class="table table-bordered" style="border:2px solid blue">
+    <thead>
+    <tr style="border:2px solid red">
+        <td style="border:2px solid red">name</td>
+        <td style="border:2px solid red">degree</td>
+    </tr>
+    </thead>
+    <tr *ngFor="#i of newitems" style="border:2px solid red">
+        <td style="border:2px solid red">{{i.name}}</td>
+        <td style="border:2px solid red">{{i.degree}}</td>
+    </tr>
+</table>
+<button type="button" class="btn btn-primary" (click)="goToAboutPage">add more students</button>
